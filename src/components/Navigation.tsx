@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Printer3d, Search, ShoppingCart } from 'lucide-react';
+import { Menu, X, Printer, Search, ShoppingCart } from 'lucide-react'; // Use Printer instead of Printer3d
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +21,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Printer3d className="h-8 w-8 text-cyan-500" />
+              <Printer className="h-8 w-8 text-cyan-500" /> {/* Updated icon */}
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
